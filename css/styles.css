@@ -191,6 +191,11 @@ margin-left: 76px;
 .second-section {
 padding-top: 120px;
 }
+
+.secondsection-calc {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
 .flex-section {
 display: flex;
 gap: 48px 24px;
