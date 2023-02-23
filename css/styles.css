@@ -153,7 +153,9 @@ margin-left: 76px;
     padding-bottom: 188px;
     padding-top: 188px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
-    background-size: cover;
+    max-width: 1440px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .hero-title {
@@ -195,15 +197,32 @@ margin-left: 76px;
 padding-top: 120px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
+
 .secondsection-calc {
     flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .secondsection-icons {
-    padding: 24px 100px;
+    display:flex;
     background-color: var(--ourteam-background-color);
     margin-bottom:8px;
     border-radius: 4px;
+    justify-content: center;
+        align-items: center;
+        height: 112px;
+        width: 264px;
 }
 
 .flex-section {
@@ -213,7 +232,6 @@ gap: 48px 24px;
 
 .whatarewedoing-section {
     padding: 120px 0;
-    display: flex;
 }
 
 .thirdsection-flex {
@@ -359,6 +377,9 @@ gap: 48px 24px;
 .works:hover, .works:focus {
     background-color: var(--main-color);
     color: var(--hover-button-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 2px 1px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-flex {
@@ -371,19 +392,19 @@ gap: 48px 24px;
     
 }
 
-.portfolio-present:hover, .portfolio-present:focus {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-    0px 1px 1px rgba(46, 47, 66, 0.16), 
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-    cursor: pointer;
+.portfolio-links {
+    text-decoration: none;
 }
 
-.portfolio-description:hover, .portfolio-description:focus {
-border: 1px solid #F4F4FD;
+.portfolio-links:visited {
+    color: var(--dark-theme-color);
+}
+
+.portfolio-present:hover, .portfolio-present:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-description {
-    
     padding: 32px 0 32px 16px;
     border-bottom: 1px solid #E7E9FC;
         border-right: 1px solid #E7E9FC;
