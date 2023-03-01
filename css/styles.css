@@ -249,6 +249,7 @@ gap: 48px 24px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    color: var(--dark-theme-color);
     
 }
 
@@ -393,14 +394,12 @@ gap: 48px 24px;
 }
 
 .portfolio-links {
+    display: block;
     text-decoration: none;
 }
 
-.portfolio-links:visited {
-    color: var(--dark-theme-color);
-}
 
-.portfolio-present:hover, .portfolio-present:focus {
+.portfolio-links:hover, .portfolio-links:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
